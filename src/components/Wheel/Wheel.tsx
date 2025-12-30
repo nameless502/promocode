@@ -12,7 +12,6 @@ import snowglobe from '../../assets/snowglobe.svg'
 import './Wheel.css'
 
 type Props = {
-    size: number;
     winner: number;
     minSpins: number;
     duration: number;
@@ -80,11 +79,15 @@ function Wheel({ winner, minSpins, duration, onAnimationEnd, isAnimationStarted 
 
             pointer.start({
                 rotate: ['-90deg', '-95deg', '-90deg'],
-                transition: { duration: 0.2, repeat: Math.ceil(duration / 2 / 0.2) }
+                transition: { duration: 0.2, repeat: Math.ceil(duration / 4 / 0.2) }
             })
                 .then(() => pointer.start({
                     rotate: ['-90deg', '-95deg', '-90deg'],
-                    transition: { duration: 0.4, repeat: Math.ceil(duration / 4 / 0.4) }
+                    transition: { duration: 0.3, repeat: Math.ceil(duration / 4 / 0.3) }
+                }))
+                .then(() => pointer.start({
+                    rotate: ['-90deg', '-95deg', '-90deg'],
+                    transition: { duration: 0.4, repeat: Math.ceil(duration / 8 / 0.4) }
                 }))
                 .then(() => pointer.start({
                     rotate: ['-90deg', '-95deg', '-90deg'],
@@ -121,35 +124,37 @@ function Wheel({ winner, minSpins, duration, onAnimationEnd, isAnimationStarted 
                         />
                     </g>
                 </motion.svg>
-                <motion.div
-                    animate={wheel}
-                    ref={wheelRef}
-                    className="wheel_spinner"
-                    style={{
-                        background: `conic-gradient(from ${180 + (segmentAngle / 2) - segmentAngle}deg, ${gradient})`
-                    }}
-                >
-                    {
-                        segments.map((segment, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className="wheel_spinner-segment"
-                                    style={{
-                                        transform: `rotate(${index * segmentAngle}deg) translateY(50%)`,
-                                        width: `${segmentWidth}px`,
-                                        zIndex: segments.length - index,
-                                    }}
-                                >
-                                    <img
-                                        src={segment.icon}
-                                        className="wheel_spinner-segment-image"
-                                    />
-                                </div>
-                            )
-                        })
-                    }
-                </motion.div>
+                <div className="wheel_spinner-wrapper">
+                    <motion.div
+                        animate={wheel}
+                        ref={wheelRef}
+                        className="wheel_spinner"
+                        style={{
+                            background: `conic-gradient(from ${180 + (segmentAngle / 2) - segmentAngle}deg, ${gradient})`
+                        }}
+                    >
+                        {
+                            segments.map((segment, index) => {
+                                return (
+                                    <div
+                                        key={index}
+                                        className="wheel_spinner-segment"
+                                        style={{
+                                            transform: `rotate(${index * segmentAngle}deg) translateY(50%)`,
+                                            width: `${segmentWidth}px`,
+                                            zIndex: segments.length - index,
+                                        }}
+                                    >
+                                        <img
+                                            src={segment.icon}
+                                            className="wheel_spinner-segment-image"
+                                        />
+                                    </div>
+                                )
+                            })
+                        }
+                    </motion.div>
+                </div>
             </div>
         </div>
     )

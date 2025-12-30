@@ -32,7 +32,6 @@ function Animation() {
                         className="animation_element"
                     >
                         <Wheel
-                            size={400}
                             winner={3}
                             minSpins={10}
                             duration={10}
