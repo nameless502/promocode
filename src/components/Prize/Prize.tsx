@@ -99,15 +99,6 @@ function Prize({ onAnimationEnd }: Props) {
                     className="prize_image"
                 />
             </div>
-            <motion.p
-                initial={{ opacity: 0, translateX: '-50%' }}
-                animate={description}
-                className="prize_description"
-            >
-                🎉 Поздравляем! 🎉
-                <br />
-                Вы выиграли <strong>сертификат на индивидуальную тренировку по падел-теннису с тренером</strong>.
-            </motion.p>
         </div>
     )
 }

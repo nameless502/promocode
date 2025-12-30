@@ -91,7 +91,7 @@ function Wheel({ winner, minSpins, duration, onAnimationEnd, isAnimationStarted 
                 }))
                 .then(() => pointer.start({
                     rotate: ['-90deg', '-95deg', '-90deg'],
-                    transition: { duration: 0.5, repeat: 1 }
+                    transition: { duration: 0.5, repeat: 2 }
                 }))
         }
     }, [isAnimationStarted]);

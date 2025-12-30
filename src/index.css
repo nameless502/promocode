@@ -19,6 +19,9 @@
   --wheel-segment-color-7: #8FB8A8;
   --wheel-segment-color-8: #3E6F6B;
 
+  --promocode-background: #CBB89D;
+  --promocode-text-color: #FFFFFF;
+
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;

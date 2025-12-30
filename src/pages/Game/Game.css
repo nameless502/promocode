@@ -1,25 +1,39 @@
-.animation {
-    margin: 0;
-    padding: 75px 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.animation_element {
+.game {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 500px;
-    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 75px;
 }
 
-.animation_start-button {
+.game_wheel-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 75px;
+}
+
+.game_title {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.game_start-button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,12 +53,12 @@
     color: var(--main-button-text-color);
 }
 
-.animation_start-button:hover {
+.game-start-button:hover {
     background: var(--main-button-background-hover);
     transition: .2s;
 }
 
-.animation_start-button-image {
+.game_start-button-image {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +69,11 @@
 }
 
 @media (max-width: 768px) {
-    .animation_element {
-        height: 400px;
+    .game {
+        gap: 50px;
+    }
+
+    .game_wheel-wrapper {
+        gap: 60px;
     }
 }

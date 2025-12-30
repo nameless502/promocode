@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 550px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .prize_box {
@@ -44,21 +45,11 @@
     z-index: 10;
 }
 
-.prize_description {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 500px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 10;
-    text-align: center;
-    font-size: 20px;
-}
-
 @media (max-width: 768px) {
+    .prize {
+        height: 375px;
+    }
+
     .prize_box {
         width: 175px;
         height: 175px;
@@ -72,11 +63,5 @@
     .prize_image {
         width: 150px;
         height: 150px;
-    }
-
-    .prize_description {
-        max-width: 90%;
-        bottom: -10%;
-        font-size: 18px;
     }
 }
