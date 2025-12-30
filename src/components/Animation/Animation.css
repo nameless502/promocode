@@ -1,0 +1,55 @@
+.animation {
+    margin: 0;
+    padding: 75px 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.animation_element {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.animation_start-button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 18px;
+    padding: 18px 44px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: var(--main-button-shadow);
+    transition: .2s;
+    background: var(--main-button-background-main);
+    color: var(--main-button-text-color);
+}
+
+.animation_start-button:hover {
+    background: var(--main-button-background-hover);
+    transition: .2s;
+}
+
+.animation_start-button-image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 22px;
+    height: 22px;
+    color: var(--main-button-text-color);
+}
