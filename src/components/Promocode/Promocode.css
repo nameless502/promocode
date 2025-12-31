@@ -7,16 +7,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .promocode_title {
     margin: 0;
     padding: 0;
+    max-width: 350px;
     box-sizing: border-box;
     text-align: center;
     line-height: 1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -28,15 +29,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .promocode_ticket {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 300px;
-    height: 80px;
+    width: 350px;
+    height: 100px;
     position: relative;
 }
 
@@ -105,32 +106,58 @@
     box-sizing: border-box;
     text-align: center;
     line-height: 1;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 800;
     color: var(--promocode-text-color);
 }
 
 .promocode_description {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     box-sizing: border-box;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.promocode_description-text {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
     line-height: 1;
     font-size: 12px;
     opacity: 0.75;
 }
 
+.promocode_description-text_main {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.promocode_description-text_secondary {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
 @media (max-width: 768px) {
     .promocode {
-        gap: 15px;
+        gap: 35px;
+    }
+
+    .promocode_title {
+        max-width: 300px;
     }
 
     .promocode_ticket-wrapper {
-        gap: 10px;
+        gap: 25px;
     }
 
     .promocode_ticket {
         width: 250px;
-        height: 70px;
+        height: 80px;
     }
 }

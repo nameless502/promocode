@@ -4,7 +4,7 @@ function Promocode() {
     return (
         <div className="promocode">
             <h2 className="promocode_title">
-                Скидка <strong>100%</strong> на индивидуальное занятие с тренером по падел-теннису
+                Скидка <strong>100%</strong> на занятие с тренером по падел-теннису
             </h2>
             <div className="promocode_ticket-wrapper">
                 <div className="promocode_ticket">
@@ -18,9 +18,16 @@ function Promocode() {
                         <div className="promocode_ticket-shape-bottom"></div>
                     </div>
                 </div>
-                <p className="promocode_description">
-                    Чтобы активировать промокод назовите его мужу и скидка учется. Срок действия промокода не ограничен
-                </p>
+                <div className="promocode_description">
+                    <p className="promocode_description-text promocode_description-text_main">
+                        Для активации промокода назовите его мужу и скидка учется. Срок действия промокода не ограничен
+                    </p>
+                    <p className="promocode_description-text promocode_description-text_secondary">
+                        Место проведения акции падел-клуб "Padel Friends", подробнее:
+                        {' '}
+                        <a>https://padelfriends.ru/kazan</a>
+                    </p>
+                </div>
             </div>
         </div>
     )

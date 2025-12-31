@@ -6,7 +6,7 @@ import ResultPage from './pages/Result/Result';
 import './App.css'
 
 function App() {
-  const [page, setPage] = useState('game');
+  const [page, setPage] = useState('result');
 
   return (
     <div className='content'>
