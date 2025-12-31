@@ -23,9 +23,14 @@ function Promocode() {
                         Для активации промокода назовите его мужу и скидка применится. Срок действия промокода не ограничен
                     </p>
                     <p className="promocode_description-text promocode_description-text_secondary">
-                        Место проведения акции падел-клуб "Padel Friends", подробнее:
+                        Место проведения акции: падел-клуб "Padel Friends". Подробнее о клубе:
                         {' '}
-                        <a>https://padelfriends.ru/kazan</a>
+                        <a
+                            href='https://padelfriends.ru/kazan'
+                            className="promocode_description-text promocode_description-text_link"
+                        >
+                            https://padelfriends.ru/kazan
+                        </a>
                     </p>
                 </div>
             </div>

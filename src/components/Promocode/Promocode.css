@@ -142,6 +142,11 @@
     opacity: 0.5;
 }
 
+.promocode_description-text_link {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 768px) {
     .promocode {
         gap: 30px;
@@ -161,6 +166,6 @@
     }
 
     .promocode_description {
-        gap: 2px;
+        gap: 4px;
     }
 }
