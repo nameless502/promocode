@@ -130,7 +130,6 @@
     text-align: justify;
     line-height: 1;
     font-size: 12px;
-    opacity: 0.75;
 }
 
 .promocode_description-text_main {
@@ -140,12 +139,12 @@
 
 .promocode_description-text_secondary {
     font-size: 12px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 @media (max-width: 768px) {
     .promocode {
-        gap: 35px;
+        gap: 30px;
     }
 
     .promocode_title {
@@ -153,11 +152,15 @@
     }
 
     .promocode_ticket-wrapper {
-        gap: 25px;
+        gap: 20px;
     }
 
     .promocode_ticket {
         width: 250px;
         height: 80px;
+    }
+
+    .promocode_description {
+        gap: 2px;
     }
 }

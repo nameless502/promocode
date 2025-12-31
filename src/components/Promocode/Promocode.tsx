@@ -20,7 +20,7 @@ function Promocode() {
                 </div>
                 <div className="promocode_description">
                     <p className="promocode_description-text promocode_description-text_main">
-                        Для активации промокода назовите его мужу и скидка учется. Срок действия промокода не ограничен
+                        Для активации промокода назовите его мужу и скидка применится. Срок действия промокода не ограничен
                     </p>
                     <p className="promocode_description-text promocode_description-text_secondary">
                         Место проведения акции падел-клуб "Padel Friends", подробнее:
